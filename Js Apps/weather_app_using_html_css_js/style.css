@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    color: white;
+}
+section{
+    min-height:82.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.weatherCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    border:1px solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+.darkMode{
+    background-color: black;
+    color: white;
+}
+.countryAndCity,.windSpeed{
+    height: 10%;
+    width: 100%;
+}
+.temprature{
+    height: 20%;
+    width: 100%;
+}
+.imageContainer{
+    height: 60%;
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imageContainer img{
+   max-width:30%;
+}
+.countryAndCity{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: orange; */
+}
+.temprature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: gray; */
+}
+.windSpeed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

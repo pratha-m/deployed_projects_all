@@ -1,0 +1,120 @@
+.rightSideBar{
+    height:80vh;
+    width:100%;
+    background-color:var(--darkBg);
+    height: max-content;
+    padding-top: 20px;
+    color: var(--whiteTextColor);
+}
+.notesHeadDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.notesHeadDiv>h1{
+    font-size: 70px;
+}
+.eachNote{
+    height:max-content;
+    max-width: 470px;
+    margin: 15px;
+    padding: 10px;
+    background-color: var(--lightDarkBg);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px #2e2f33;
+    transition:transform 2s linear;
+}
+.eachNote:hover{
+    transform: translateY(-10px);
+}
+.eachNote>.eachNoteTitle{
+    height:70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    overflow: hidden;
+}
+@media screen and (max-width:477px){
+    .eachNote>.eachNoteTitle{
+        height: 90px;
+    }
+}
+.eachNote>.eachNoteDesc{
+    min-height: 100px;
+    max-height: 200px;
+    overflow-y: auto;
+    border: solid none none solid;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: #909098;
+    font-size: 18px;
+    padding-top: 12px;
+    word-wrap: break-word;
+}
+.eachNote>.eachNoteButtons{
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+}
+.eachNote>.eachNoteButtons>.eachNoteBtn{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 4px;
+}
+.eachNote>.eachNoteButtons>.eachNoteBtn>img{
+    height: 100%;
+}
+.notesContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.notesInnerContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.eachNoteDesc::-webkit-scrollbar {
+    width: 12px;
+  }
+  .eachNoteDesc {
+    scrollbar-width:thin;
+  }
+  .eachNoteDesc::-webkit-scrollbar-track {
+    background:transparent;
+  }
+  .eachNoteDesc::-webkit-scrollbar-thumb {
+    background-color:rgba(180, 145, 145, 0.1) ;
+    border-radius: 10px;
+  }
+  .eachNoteDesc {
+    height: 100vh;
+    background: var(--lightDarkBg);
+    overflow-y: auto;
+    max-width: 310px;
+    margin: 0 auto;
+    padding: 0.5rem;
+    font: 100%/1.4 serif;
+    border: 1px solid rgba(0, 0, 0, 0.25)
+  }
+  
+
+   .noNotes{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+   }
+

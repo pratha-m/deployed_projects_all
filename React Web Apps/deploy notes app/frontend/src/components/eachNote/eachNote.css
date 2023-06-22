@@ -1,0 +1,79 @@
+.eachNote{
+    background-color: pink;
+    height:max-content;
+    max-width: 470px;
+    margin: 5px;
+    padding: 10px;
+}
+.eachNote>.eachNoteTitle{
+    height:70px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    overflow: hidden;
+}
+@media screen and (max-width:477px){
+    .eachNote>.eachNoteTitle{
+        height: 90px;
+    }
+}
+.eachNote>.eachNoteDesc{
+    /* background-color: green; */
+    min-height: 100px;
+    max-height: 200px;
+    overflow-y: auto;
+    border: solid none none solid;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: #909098;
+    font-size: 18px;
+}
+.eachNote>.eachNoteButtons{
+    height:40px;
+    /* background-color:greenyellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+}
+.eachNote>.eachNoteButtons>.eachNoteBtn{
+    height: 30px;
+    width: 30px;
+    /* background-color:blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.eachNote>.eachNoteButtons>.eachNoteBtn>img{
+    height: 100%;
+}
+.eachNoteDesc::-webkit-scrollbar {
+    width: 11px;
+  }
+  .eachNoteDesc {
+    scrollbar-width:thin;
+    scrollbar-color: #90A4AE #CFD8DC;
+  }
+  .eachNoteDesc::-webkit-scrollbar-track {
+    background: #CFD8DC;
+  }
+  .eachNoteDesc::-webkit-scrollbar-thumb {
+    background-color: #90A4AE ;
+    border-radius: 6px;
+    border: 3px solid #CFD8DC;
+  }
+  /* .eachNoteDesc {
+    height: 100vh;
+    background: whitesmoke;
+    overflow-y: auto;
+    max-width: 310px;
+    margin: 0 auto;
+    padding: 2rem;
+    font: 100%/1.4 serif;
+    border: 1px solid rgba(0, 0, 0, 0.25)
+  }
+   */

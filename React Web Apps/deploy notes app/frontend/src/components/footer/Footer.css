@@ -1,0 +1,12 @@
+.footer{
+    height:10vh;
+    width:100%;
+    background-color: var(--darkBg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--whiteTextColor);
+    border-width: 10px 0px 0px 0px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.3);
+}

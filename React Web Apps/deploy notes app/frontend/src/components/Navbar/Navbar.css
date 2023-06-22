@@ -1,0 +1,454 @@
+
+.navBar{
+    height:11vh;
+    width:100%;
+    background-color:var(--darkBg);
+    position: relative;
+    z-index: 1;
+}
+
+
+/* border-radius:20px;z-index:2;
+       box-shadow: 2px 3px 3px #da7f7f; */
+
+       *{
+        margin: 0;
+        padding: 0;
+        /* color: #f2f5f7; */
+    }
+    body{
+        overflow-x: hidden;
+    }
+    nav{
+        height: 11%;
+        width: 100vw;
+        background-color:var(--transparentBg);
+        box-shadow: 0 3px 20px var(--transparentBg);
+        display: flex;
+        position: fixed;
+        z-index: 10;
+        font-family: sans-serif;
+        letter-spacing: 1px;
+        font-weight: 300;
+        backdrop-filter:blur(8px);
+    }
+    
+    /*Styling logo*/
+    .logo{
+        padding:1vh 1vw;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo>h1{
+        font-size: 30px;
+    }
+    .logo img {
+        width: 100px;
+    }
+    
+    /*Styling Links*/
+    .nav-links{
+        display: flex;
+        list-style: none; 
+        width: 88vw;
+        padding: 0 0.7vw;
+        /* justify-content: space-evenly; */
+        align-items: center;
+        /* text-transform: uppercase; */
+        font-size: 13px;
+           font-family: sans-serif;
+        letter-spacing: 1px;
+        font-weight: 300;
+
+    }
+    .nav-links li a{
+        text-decoration: none;
+        margin: 0 0.7vw;
+        color: var(--whiteTextColor);
+        font-family: sans-serif;
+        letter-spacing: 1px;
+        font-weight: 300;
+    }
+    .nav-links li a:hover {
+        color: #61DAFB;
+    }
+    .nav-links li {
+        position: relative;
+    }
+    .nav-links li a::before {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 0%;
+        background-color: #61DAFB;
+        position: absolute;
+        transition: all ease-in-out 250ms;
+        margin: 0 0 0 10%;
+    }
+    /* .nav-links li a:hover::before{
+        width: 80%;
+    } */
+    
+    /*Styling Buttons*/
+    .login-button{
+        background-color: var(--transparentBg);
+        border: 1.5px solid var(--whiteTextColor);
+        border-radius: 2em;
+        padding: 0.6rem 0.8rem;
+        margin-left: 2vw;
+        font-size: 1rem;
+        cursor: pointer;
+        color:var(--whiteTextColor);
+           font-family: sans-serif;
+        letter-spacing: 1px;
+        font-weight: 300;
+    }
+    .login-button:hover {
+        color: var(--blackTextColor);
+        background-color: var(--whiteBg);
+        border:1.5px solid var(--whiteTextColor);
+        transition: all ease-in-out 350ms;
+    }
+    .account-button{
+        background-color:var(--transparentBg);
+        border: 1.5px solid var(--whiteTextColor);
+        border-radius: 2em;
+        padding: 0.6rem 0.8rem;
+        margin-left: 2vw;
+        font-size: 1rem;
+        cursor: pointer;
+        color: var(--whiteTextColor);
+           font-family: sans-serif;
+        letter-spacing: 1px;
+        font-weight: 300;
+    }
+    .account-button:hover {
+        color: var(--darkBg);
+        background-color: var(--whiteBg);
+        border:1.5px solid var(--whiteBg);
+        transition: all ease-in-out 350ms;
+    }
+    .join-button{
+        color: var(--whiteTextColor);
+        background-color: var(--transparentBg);
+        border: 1.5px solid var(--whiteTextColor);
+        border-radius: 2em;
+        padding: 0.6rem 0.8rem;
+        font-size: 1rem;
+        cursor: pointer;
+           font-family: sans-serif;
+        letter-spacing: 1px;
+        font-weight: 300;
+    }
+    .join-button:hover {
+        color: var(--blackTextColor);
+        background-color: var(--whiteBg);
+        border:1.5px solid var(--whiteTextColor);
+        transition: all ease-in-out 350ms;
+    }
+    
+    /*Styling Hamburger Icon*/
+    .hamburger div{
+        width: 30px;
+        height:3px;
+        background: var(--whiteTextColor);
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+    .hamburger{
+        display: none;
+    }
+    
+    /*Stying for small screens*/
+    @media screen and (max-width: 800px){
+        nav{
+            position: fixed;
+            z-index: 3;
+        }
+        .hamburger{
+            display:block;
+            position: absolute;
+            cursor: pointer;
+            right: 5%;
+            top: 50%;
+            transform: translate(-5%, -50%);
+            z-index: 2;
+            transition: all 0.7s ease;
+        }
+        .nav-links{
+            position: fixed;
+            background: var(--darkBg);
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+            clip-path: circle(50px at 90% -20%);
+            -webkit-clip-path: circle(50px at 90% -10%);
+            transition: all 1s ease-out;
+            pointer-events: none;
+            justify-content: space-evenly;
+        }
+        .nav-links.open{
+            clip-path: circle(1000px at 90% -10%);
+            -webkit-clip-path: circle(1000px at 90% -10%);
+            pointer-events: all;
+        }
+        .nav-links li{
+            opacity: 0;
+        }
+        .nav-links li:nth-child(1){
+            transition: all 0.5s ease 0.2s;
+        }
+        .nav-links li:nth-child(2){
+            transition: all 0.5s ease 0.4s;
+        }
+        .nav-links li:nth-child(3){
+            transition: all 0.5s ease 0.6s;
+        }
+        .nav-links li:nth-child(4){
+            transition: all 0.5s ease 0.7s;
+        }
+        .nav-links li:nth-child(5){
+            transition: all 0.5s ease 0.8s;
+        }
+        .nav-links li:nth-child(6){
+            transition: all 0.5s ease 0.9s;
+            margin: 0;
+        }
+        .nav-links li:nth-child(7){
+            transition: all 0.5s ease 1s;
+            margin: 0;
+        }
+        li.fade{
+            opacity: 1;
+        }
+    }
+    /*Animating Hamburger Icon on Click*/
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px,6px);
+    }
+    .toggle .line2{
+        transition: all 0.7s ease;
+        width:0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px,-6px);
+    }
+    .showSignUp{
+        display: flex;
+    }
+    .hideSignUp{
+        display: none;
+    }
+    
+    #SignUpDiv{
+        position: fixed;
+        z-index: 1;
+        height: 90%;
+        width: 100%;
+        flex-direction: column;
+        background-color:var(--blackTransparentBg);
+    }
+    #SignUpDiv>.closeSignUpButtonContainer{
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-top: 50px;
+        padding-right: 200px;
+    }
+    #SignUpDiv>.closeSignUpButtonContainer>.closeSignUpButton{
+        height: 40px;
+        width: 40px;
+        /* background-color: blue; */
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #SignUpDiv>.closeSignUpButtonContainer>.closeSignUpButton>img{
+        height: 100%;
+    }
+    #SignUpDiv>.signUpFormContainer{
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .showSignIn{
+        display: flex;
+    }
+    .hideSignIn{
+        display: none;   
+    }
+    #SignInDiv{
+        position: fixed;
+        z-index: 1;
+        height: 90%;
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--blackTransparentBg);
+    }
+    #SignInDiv>.closeSignInButtonContainer{
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-top: 50px;
+        padding-right: 200px;
+    }
+    #SignInDiv>.closeSignInButtonContainer>.closeSignInButton{
+        height: 40px;
+        width: 40px;
+        /* background-color: blue; */
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #SignInDiv>.closeSignInButtonContainer>.closeSignInButton>img{
+        height: 100%;
+    }
+    #SignInDiv>.signInFormContainer{
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    
+
+.showOtp{
+    display: flex;
+  }
+  .hideOtp{
+    display: none;
+  }
+  #otpDiv{
+    position: fixed;
+    z-index: 1;
+    height: 90%;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--blackTransparentBg);
+  }
+  #otpDiv>.closeOtpButtonContainer{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 50px;
+    padding-right: 200px;
+  }
+  #otpDiv>.closeOtpButtonContainer>.closeOtpButton{
+    height: 40px;
+    width: 40px;
+    /* background-color: blue; */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #otpDiv>.closeOtpButtonContainer>.closeOtpButton>img{
+    height: 100%;
+  }
+  #otpDiv>.otpFormContainer{
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* #navbarAccountLi{
+    display: none;
+  } */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--darkBg);
+    height: 40px;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px var(--lightBlackTransparentBg);
+    padding: 12px 16px;
+    z-index: 1;
+    color: var(--whiteTextColor);
+    cursor: pointer;
+    border-radius: 10px;
+    top: 40px;
+  }
+  .dropdown-content:hover {background-color: var(--lightDarkBg)}
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  #navbarSignUpLi{
+    margin-left: 8px;
+  }
+
+
+  /* light and dark mode switch  */
+  .navarLightDarkSwitchDiv {
+    width:max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin: 0;
+    transition:background 0.2s linear;
+    box-shadow: 4px 4px 10px var(--lightDarkBg);
+  }
+  .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .label {
+    width: 55px;
+    height: 25px;
+    background-color:var(--smallBtnsDarkBg);
+    /* background-color:blue; */
+    display: flex;
+    border-radius:50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    transform: scale(2);
+  }
+  .label>.lightmodeImg{
+    height: 17px;
+  }
+  .label>.darkmodeImg{
+    height: 22px;
+  }
+  
+  .ball {
+    width: 20px;
+    height: 20px;
+    background-color: var(--whiteBg);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.3s linear;
+    cursor: pointer;
+  }
+  
+  /*  target the elemenent after the label*/
+  .checkbox:checked + .label .ball{
+    transform: translateX(29px);
+  }
+  #navarLightDarkSwitchLi{
+    margin-left: 15px;
+  }
+
+  

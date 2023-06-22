@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.leftSideBar{
+   height:max-content;
+   width:100%;
+   /* background-color:red; */
+   background-color:var(--darkBg);
+   display: flex;
+   flex-direction: column;
+   align-items:center;
+   justify-content: center;
+}
+.leftSideBarContentDiv{
+   min-height:100%;
+   height: max-content;
+   width:100%;
+   /* background-color:  #78944c; */
+   background-color:var(--darkBg)
+}
+.leftSideBarContentDiv::-webkit-scrollbar{
+  width: 15px;
+  background-color:var(--whiteBg);
+  padding: 20px;
+}
+.leftSideBarContentDiv::-webkit-scrollbar-thumb{
+  width: 10px;
+   background-color:var(--whiteBg);
+   border-radius: 20px;
+}
+.createNoteHeading{
+ height:10%;   
+ width:100%;
+ background-color:var(--darkBg);
+ display: flex;
+ align-items:center;
+ justify-content: center;
+ font-size:50px;
+ font-weight: bold;
+ padding: 10px;
+ color: var(--whiteTextColor);
+ letter-spacing: 5px;
+}
+.textAreaDiv{
+  min-height: 230px;
+  width:100%;
+  background-color:var(--darkBg);
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-around;
+  /* overflow: auto; */
+  overflow-x: hidden;
+}
+#textArea{
+ height:75%;
+ max-height: 170px;
+ width:98%;
+ /* max-width:90%;
+ max-height:90%;
+ min-width:90%;
+ min-height:90%; */
+ outline: none;
+ border-radius:10px;
+ padding:4px;
+ /* background-color: #f1f1f1; */
+ background-color: var(--lightDarkBg);
+ overflow-y: auto;
+ padding-left:10px;
+  font-size: 20px;
+  margin: 5px;
+  flex: 6;
+  color: var(--whiteTextColor);
+  overflow-wrap: anywhere;
+}
+
+
+
+#textArea::-webkit-scrollbar {
+  width: 12px;
+}
+#textArea {
+  scrollbar-width:thin;
+}
+#textArea::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+#textArea::-webkit-scrollbar-thumb {
+  background-color:rgba(180, 145, 145, 0.1) ;
+  border-radius: 10px;
+}
+
+
+.titleDiv{
+  height: 22%;
+  margin: 5px;
+  margin-bottom: 0px;
+  width: 98%;
+  display: flex;
+  flex: 1;
+}
+.titleDiv>input{
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding-left:10px;
+  font-size: 20px;
+  background-color: var(--lightDarkBg);
+  color: var(--whiteTextColor);
+}
+/* #textArea:hover{
+  border:1px solid blue;
+} */
+[contenteditable=true]:empty:before{
+  content: attr(placeholder);
+  pointer-events: none;
+  position: relative;
+  color: gray;
+  background-color: transparent;
+  font-size: 24px;
+}
+.allButtonsDiv{
+  min-height:10%;
+  height:max-content;
+  width:100%;
+  background-color:var(--darkBg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.Btns{
+  height:35px;
+  width:50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: green; */
+  background-color: var(--smallBtnsDarkBg);
+  color:var(--whiteTextColor);
+  border-radius:20px;
+  cursor: pointer;
+  margin:5px;
+  border: none;
+  font-weight: bold;
+}
+/* .upperAndLowerCaseBtn{
+  width: 143px;
+} */
+.Btns>img{
+  height: 50%;
+}
+.checklistBtn>img{
+   height: 70%;
+}
+.removeExtraSpacesBtn{
+  width:160px;
+}
+/* .clearTextButton{
+  width:80px;
+} */
+/* .findAndReplace{
+  width:150px;
+} */
+.whiteTextArea{
+  background-color: var(--whiteBg);
+}
+/* .Btns:hover{
+  background-color: rgba(110, 163, 110, 0.9);
+} */
+.containClickableElements{
+  height:80px;
+  width:100%;
+  /* background-color:green; */
+  position:absolute;
+  top:10%;
+  left:0%;
+  z-index:0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.findAndReplaceDiv{
+  top: 12px;
+  position: relative;
+  height: 100%;
+  width: 350px;
+  /* background-color: white; */
+  /* box-shadow: 2px 3px 3px #da7f7f; */
+  margin-right: 20px;
+  z-index: 999;
+  display: none;
+}
+.showFindAndReplaceDiv{
+  display: flex;
+  flex-direction: column;
+}
+.findDiv{
+  background-color:var(--lightDarkBg);
+  height:50%;width:100%;
+  display: flex;
+}
+.openerOfReplace{
+  height:100%;
+  width:12%;
+  background-color:var(--lightDarkBg);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:40% 40%;
+}
+.openerOfReplace:hover{
+  background-color: var(--lightBlackTransparentBg);
+}
+.arrowDown{
+  background-image:url("../../../public/images/arrow_down.png");
+}
+.arrowUp{
+  background-image:url("../../../public/images/arrow_up.png");
+}
+.findInputAndTextDiv{
+  height:100%;
+  width:78%;
+  background-color:var(--lightDarkBg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.findTextDiv{
+  background-color:var(--lightDarkBg);
+  height:80%;
+  width:15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:12px;
+  color: var(--whiteTextColor);
+  border-radius:10px;
+  cursor: pointer;
+  border-width:2px;
+  border-style: solid;
+  border-color: var(--whiteTextColor);
+  border-radius: 25px;
+}
+.findTextDiv:hover{
+  background-color:var(--lightBlackTransparentBg);
+}
+.findInputDiv{
+  background-color:var(--lightDarkBg);
+  height:100%;
+  width:85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.findInput{
+  height:80%;
+  width:95%;
+  outline: none;
+  border-style:solid;
+  border-width:1px;
+  /* border-color: var(--whiteTextColor); */
+  background-color:var(--lightBlackTransparentBg);
+  padding-left:4px;
+  font-size:17px;
+  color:var(--whiteTextColor);
+}
+.closeIconFindAndReplaceDiv{
+  height:100%;
+  width:12%;
+  background-color: var(--lightDarkBg);
+  background-image:url("../../../public/images/closeIcon.png");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:60% 60%;
+}
+.closeIconFindAndReplaceDiv:hover{
+  background-color: var(--lightBlackTransparentBg);
+}
+.replaceDiv{
+  border-width:1px;
+  background-color:var(--lightDarkBg);
+  height:50%;width:100%;
+  display:none;
+}
+.showReplaceDiv{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.replaceTextDiv{
+  background-color:var(--lightDarkBg);
+  height:80%;
+  width:20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:12px;
+  color: var(--whiteTextColor);
+  border-radius:25px;
+  cursor: pointer;
+  border-width:2px;
+  border-style: solid;
+  border-color:var(--whiteTextColor);
+  margin-right:4px;
+}
+.replaceTextDiv:hover{
+  background-color:var(--lightBlackTransparentBg);
+}
+.replaceInputDiv{
+  height:100%;
+  width:80%;
+  background-color:var(--lightDarkBg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.replaceInput{
+  height:80%;
+  width:95%;
+  outline: none;
+  border-style:solid;
+  border-width:1px;
+  /* border-color: #fbfcff; */
+  background-color:var(--lightBlackTransparentBg);
+  padding-left:4px;
+  font-size:17px;
+  color:var(--whiteTextColor);
+}
+.allInputsDiv{
+   min-height:18%;
+   height:max-content;
+   width:100%;
+   background-color: blue;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+.fontSizeInputAndTextDiv,.fontFamilyDiv{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin:7px;
+}
+.fontFamilyDiv{
+  width: 145px;
+}
+.fontSizeText,.fontFamilyText{
+  font-size:19px;
+  color:var(--whiteTextColor);
+}
+.fontSizeInputDiv{
+  height:22px;
+  width:37px;
+  background-color: var(--smallBtnsDarkBg);
+}
+.fontFamilyOptionsDiv{
+  height:22px;
+  width:130px;
+}
+#fontSizeInput,.fontFamilyOptionsDiv>select{
+  height:100%;
+  width:100%;
+  outline: none;   
+  border:none;
+  border-radius:3px;
+  margin:2px;
+  color: var(--whiteTextColor);
+}
+.fontFamilyOptionsDiv>select{
+  background-color: var(--smallBtnsDarkBg);
+}
+.fontFamilyOptionsDiv>select>option{
+  background-color: var;
+}
+.textOtherOptionsDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.biulpbOptions{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap:wrap;
+}
+.textAlignmentOptions{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .textBtn{    
+  height: 30px;
+  width: 89px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3px;
+  background-color: rgb(21, 114, 21);
+  color: var(--whiteTextColor);
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+.textBtn:hover{
+  background-color: rgba(110, 163, 110, 0.9);
+} */
+/* .textOtherComplexOptions{
+  height:50px;
+  width: 100%;
+} */
+/* .textColorBtnDiv{
+  height: 30px;
+    width: 80px;
+    background: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:3px;
+    color: white;
+} */
+[type="color"]{
+  appearance: none;
+  padding: 0px;
+  width: 20px;
+  height: 20px;
+  border: none;
+}
+[type="color"]::-webkit-color-swatch-wrapper{
+  padding: 0;
+}
+[type="color"]::webkit-color-swatch{
+ border: none; 
+}
+.textOtherComplexOptionsDiv{
+  height:10%;
+  width:100%;
+  background-color: orchid;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 10px;
+}
+.complexBtnsDiv{
+  height: 30px;
+  width: 100px;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.complexBtnsDiv>button{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(21, 114, 21);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+.textEffectsOptionsDiv{
+  position: absolute;
+  height:200px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 1px 1px 5px black;
+  display: none;
+  flex-direction: column;
+  border-radius:0px 0px 0px 0px;
+}
+
+.textEffectEachOption{
+  display: flex;
+  align-items: center;
+  height:20%;
+}
+.textEffectEachOption:hover{
+  background-color: rgb(198, 198, 255);
+}
+.createNoteButtonDiv{
+  height:10%;
+  width:100%;
+  /* background-color: #131418; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  border-style: solid;
+    border-width: 0px 0px 10px 0px;
+    border-color: rgba(0,0,0,0.3);
+}
+.createNoteButton{
+  height:50px;
+  width:200px;
+  background-color:var(--smallBtnsDarkBg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:var(--whiteTextColor);
+  cursor: pointer;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 24px;
+}
+.createNoteButton:hover{
+  background-color:var(--lightDarkBg);
+}
+
+/* toasst css starts  */
+/* #snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+  border-radius: 5px;
+  box-shadow:1px 1px 10px black;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+} */
+
+/* toasst css ends  */
+
+.unselectable {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* .unselectable:focus {
+  outline: none !important;
+} */

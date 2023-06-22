@@ -1,0 +1,18 @@
+:root{
+  --trackBg:#131418;
+  --thumbBg:#2e2f33;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+  }
+body{
+    scrollbar-width:thin;
+}
+body::-webkit-scrollbar-track {
+    background:var(--trackBg);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color:var(--thumbBg);
+    border-radius: 10px;
+  }

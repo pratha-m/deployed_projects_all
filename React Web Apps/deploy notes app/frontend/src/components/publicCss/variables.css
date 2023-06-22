@@ -1,0 +1,11 @@
+:root{
+    --darkBg:#131418;
+    --whiteBg:white;
+    --whiteTextColor:white;
+    --blackTextColor:#131418;
+    --lightDarkBg:#292828;
+    --lightBlackTransparentBg:rgba(0, 0, 0, 0.2);
+    --blackTransparentBg:#000000bd;
+    --transparentBg:transparent;
+    --smallBtnsDarkBg:#2e2f33;
+}

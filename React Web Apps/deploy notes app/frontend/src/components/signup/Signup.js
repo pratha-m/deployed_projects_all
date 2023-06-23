@@ -37,6 +37,7 @@ const Signup=({closeSignUpForm,openSignInPage,openOtpForm})=>{
      else{ 
       if(password===confirmPassword){
          loaderDiv.style.display="flex"; 
+         console.log(process.env.REACT_APP_BASE_URL);
          axios.post(`${process.env.REACT_APP_BASE_URL}/createuser`,{user_email:email,user_password:password})
           .then((result)=>{
             loaderDiv.style.display="none";

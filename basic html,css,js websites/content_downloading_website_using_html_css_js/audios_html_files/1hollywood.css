@@ -1,0 +1,280 @@
+.nav-container{
+    background-color:transparent;
+    /* width:100vw; */
+    height:10vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-bar ul{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.nav-bar ul li{
+width:130px;
+margin:15px;
+padding:15px;
+}
+.nav-container .nav-bar ul li a
+{
+text-decoration: none;    
+color:white;
+}
+.nav-container{
+    background-color:rgba(78,87,100,0.5);
+}
+.submenu1{
+display:none;    
+z-index: 1;
+}
+.section .nav-container .active_images,.nav-bar ul li:hover a{
+   color:yellowgreen
+}
+.nav-bar ul li:hover .submenu1
+{
+border-radius:10px;  
+width:400px;  
+display:block;
+position:absolute;
+background-color:rgb(255, 230, 230);
+margin-top:15px;
+margin-left:-30px;
+box-shadow:5px 5px 10px rgb(129, 120, 120);
+font-size:18px;
+}
+.nav-bar ul li:hover .submenu1 ul{
+    display:block;
+    margin: 0px;
+}
+.nav-bar ul li:hover .submenu1 ul li{
+    text-align:left;
+}
+.nav-bar ul li:hover .submenu1 ul li a
+{
+padding:4px;
+color:black;
+}
+
+.nav-bar ul li:hover .submenu1 ul li:hover a{
+color:rgb(166, 241, 91);
+font-size:21px;
+}
+.fa-angle-down{
+    float: right;
+}
+.section{
+    position:relative;
+    width:100%;
+    height:80vh;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.section .nav-container{
+    text-align:center;
+    z-index:1;
+    background-color:rgba(78,87,100,0.5);
+    padding: 10px;
+    margin:10px;
+}
+.section .nav-container .nav-bar li a{
+color:white;
+font-size:20px;
+font-family:monospace;
+}
+
+
+
+
+
+
+
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+}
+.container .box1{
+    height:8vh;
+    width:100%;
+    background-color:rgba(170,130,180,0.15);
+}
+.container .box2{
+    height:8vh;
+    width:100%;
+    background-color:rgba(250,250,250);
+}
+.box:hover{
+    background-color:rgba(170,130,180,0.3);
+}
+.box{
+    display:flex;
+    align-items:center;
+}
+/* left div starts */
+.song_name_div{
+    font-size:25px;
+    font-family: sans-serif;
+    font-weight:200;
+}
+.play_volume{
+    position:relative;
+    left:100px;
+    visibility: hidden;
+}
+.volume_button{
+    margin-left:30px;
+    padding:10px 10px;
+    border-radius:100%;
+    border-style:none;
+    background-color:rgba(170,130,180);
+    color:white;
+    margin:10px;
+    /* border:1px solid; */
+    border-color: rgb(208, 221, 220);
+}
+.play_volume input{
+    position:absolute;
+    margin-left:10px;
+    top:45%;
+    height:3px;
+    cursor: pointer;
+}
+.play_volume .play_button{
+    padding:10px 12px;
+    border-radius:100%;
+    border-style:none;
+    background-color:rgba(170,130,180);
+    color:white;
+    margin:10px;
+}
+.box:hover .play_volume{
+    visibility: visible;
+}
+/* left div ends */
+
+/* center div starts */
+.center_div{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left:50%;
+    padding:15px; 
+    font-size:25px;
+    font-family: sans-serif;
+    font-weight:200;
+}
+/* center div ends */
+i{
+   cursor:pointer; 
+}
+
+/* music player starts  */
+.music_player{
+    position:sticky;
+    bottom: 0;
+    height:15vh;
+    width:100%;
+    background-color:rgb(100,70,0);
+    display: flex;
+    align-items: center;
+}
+.all_options{
+    position: relative;
+    width:60%;
+    margin-left: 159px;
+}
+.small_gif_container{
+    height:100%;
+    width:10%;
+}
+.name_and_artistname{
+    position:absolute;
+    color:white;
+    height:80%;
+    width: 21%;
+    top:10%;
+    left:12%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.left_div{
+    display: contents;
+}
+.music_player .all_options .buttons_div{
+margin-left:30%;
+width:40%;
+display: flex;
+}
+.music_player .all_options .buttons_div .previous_button,.next_button,.repeat_button{
+padding:6px 6px;
+border-radius:100%;
+border-style:none;
+background-color:rgb(100,70,0);
+color:white;
+margin:10px;
+}
+.music_player .all_options .buttons_div .play_button{
+padding:20px 22px;
+border-radius:100%;
+border-style:none;
+background-color:rgb(100,70,0);
+color:white;
+margin:10px;
+border:1px solid;
+border-color: rgb(208, 221, 220);
+}
+.music_player .all_options .buttons_div .autoplay{
+color:white;
+background-color:rgb(100,70,0);
+padding:10px 10px;
+border: none;
+font-size: 20px;
+font-weight: 600;
+}
+.music_player .all_options .buttons_div .autoplay span{
+cursor: pointer;
+}
+.music_player .all_options .buttons_div button i{
+    font-size: 25px;
+}
+.music_player .all_options .input_div{
+    margin-top:-10px;
+
+}
+.music_player .all_options .input_div input{
+height:2px;
+width:60%;
+margin-left:15%;
+}
+.right_side_volume .volume_button{
+    padding:8px 8px;
+    border-radius:100%;
+    border-style:none;
+    background-color:rgb(100,70,0);
+    color:white;
+    margin:10px;
+    /* border:1px solid; */
+    border-color: rgb(208, 221, 220);    
+}
+.right_side_volume
+{
+margin-right: 56px;
+margin-top: -35px;
+margin: auto;
+}
+.right_side_volume .volume
+{
+height:3px;    
+cursor:pointer;
+}
+
+
+/* music player ends  */

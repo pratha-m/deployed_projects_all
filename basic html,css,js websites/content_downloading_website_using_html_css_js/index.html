@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ae82594478.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<!-- transition-delay:time; -->
+
+<!-- first page div starts -->
+<div class="section">     
+<!-- navigation bar div starts -->
+<div class="nav-container">
+<nav class="nav-bar">
+<ul>
+<li style="font-size: 40px;color:plum;font-family:monospace;font-weight: 900">VIEWPORT</li>    
+<!-- first li starts -->
+<li><a href="index.html" style="color:rgb(166, 241, 91);">Home</a></li> 
+<!-- first li ends -->
+
+<!-- second li starts -->
+<!-- <li><a href="#">About us</a></li>  -->
+<!-- second li ends -->
+    
+<!-- third li starts -->
+<li><a class="active_images" href="#">Images<i class="fas fa-angle-down"></i></a>   
+     <!-- submenu1 starts -->
+    <div class="submenu1">
+    <ul>
+    <li><a href="images_html_files/nature_images.html">Nature</a></li>    
+    <li><a href="images_html_files/background_images.html">Background</a></li>    
+    <li><a href="images_html_files/illustrations_images.html">Ilustrations</a></li>    
+    <li><a href="images_html_files/cars_images.html">Cars</a></li>    
+    <li><a href="images_html_files/wildlife_images.html">Wildlife</a></li>    
+    </ul>
+    </div>
+    <!-- again submenu1 ends -->
+</li> 
+<!-- third li ends -->
+
+<!-- fourth li starts -->
+<li><a class="active_images" href="#">videos<i class="fas fa-angle-down"></i></a>   
+    <!-- submenu1 starts -->
+   <div class="submenu1">
+   <ul>
+   <li><a href="videos_html_files/building.html">Building</a></li>    
+   <li><a href="videos_html_files/animation.html">Animation</a></li>    
+   <li><a href="videos_html_files/nature.html">Nature</a></li>    
+   <li><a href="videos_html_files/food.html">Food</a></li>    
+   <li><a href="videos_html_files/wildlife.html">wildlife</a></li>    
+   </ul>
+   </div>
+   <!-- again submenu1 ends -->
+</li> 
+<!-- fourth li ends -->
+
+<!-- fifth li starts -->
+<li><a class="active_images" href="#">audios<i class="fas fa-angle-down"></i></a>   
+    <!-- submenu1 starts -->
+   <div class="submenu1">
+   <ul>
+   <li><a href="audios_html_files/1hollywood.html">Hollywood</a></li>    
+   <li><a href="audios_html_files/1bollywood.html">Bollywood</a></li>    
+   <li><a href="audios_html_files/1background.html">Background</a></li>    
+   </ul>
+   </div>
+   <!-- again submenu1 ends -->
+</li> 
+<!-- fifth li ends -->
+</ul>    
+</nav>    
+</div> 
+<!-- navigation bar div ends -->
+
+<div class="video-container">
+    <div class="color-overlay"></div>
+    <video src="videos/MyVideo.mp4" autoplay loop muted></video>
+    </div>
+<!-- typewriter div starts      -->
+<!-- <div class="typewriter_div">
+    <ul class="dynamic_text">
+    <li><h1 class="a1">Footages</h1></li>
+    <li><h1 class="a2">Images</h1></li>
+    <li><h1 class="a3">Audios</h1></li>
+    </ul>
+</div> -->
+<!-- typewriter div ends      -->
+<!-- sign up and sign in buttons starts -->
+<div class="sign-up-in-buttons">
+<div class="sign-up-button"><a href="signup.html">Sign Up</a></div>
+<div class="sign-in-button"><a href="signin.html">Sign In</a></a></div>
+</div>
+<!-- sign up and sign in buttons ends -->
+</div>
+<!-- first page div ends -->
+
+<!-- images videos and audios div -->
+<div class="images_videos_audios">
+<!-- images div starts-->
+<div class="images_div">
+    <!-- column1 images starts -->
+    <div class="images_column_1">
+            <div class="column1_image1">
+              <div class="image1_column1_box">
+                <img src="images/home_i1.jpg"></a>
+              </div>
+                <div class="options1">
+                <ul>
+                    <li><a href="images/home_i1.jpg" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart"></i></a><br><span style="font-size:20px;font-weight:bold;color:white;" class="game1">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="share_click">0</span></li>
+                </ul>
+                </div>
+            </div>
+               
+            <div class="column1_image2">
+                <div class="image2_column1_box">
+                    <img src="images/home_i2.jpg">
+                </div>
+                
+                <div class="options1">
+                    <ul>
+                        <li><a href="images/home_i2.jpg" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                        <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                        <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="column1_image3">
+                <div class="image3_column1_box">
+                    <img src="images/home_i3.jpg">
+                </div>
+                <div class="options1">
+                    <ul>
+                        <li><a href="images/home_i3.jpg" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                        <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                        <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="column1_image4">
+                <div class="image4_column1_box">
+                    <img src="images/home_i4.jpg">
+                </div>
+                <div class="options1">
+                    <ul>
+                        <li><a href="images/home_i4.jpg" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                        <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                        <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="column1_image5">
+                <div class="image5_column1_box">
+                    <img src="images/home_i5.jpg">
+                </div>
+                <div class="options1">
+                    <ul>
+                        <li><a href="images/home_i5.jpg" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                        <li><a href="#"><i title="give heart" class="fas fa-heart"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                        <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="column1_image6">
+                <div class="image6_column1_box">
+                    <img src="images/home_i6.jpg">
+                </div>
+                <div class="options1">
+                    <ul>
+                        <li><a href="images/home_i6.jpg" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                        <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                        <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="column1_image7">
+                <div class="image7_column1_box">
+                    <img src="images/home_i7.jpg">
+                </div>
+                <div class="options1">
+                    <ul>
+                        <li><a href="images/home_i7.jpg" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                        <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                        <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="column1_image8">
+                <div class="image8_column1_box">
+                    <img src="images/home_i8.png">
+                </div>
+                <div class="options1">
+                    <ul>
+                        <li><a href="images/home_i8.png" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                        <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                        <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+    <!-- column1 images ends -->
+    
+    <!-- column2 images starts -->
+    <div class="images_column_2">
+        <div class="column2_image9">
+            <div class="image9_column2_box">
+                <img src="images/home_i9.png">
+            </div>
+            <div class="options1">
+                <ul>
+                    <li><a href="images/home_i9.png" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="column2_image10">
+            <div class="image10_column2_box">
+                <img src="images/home_i10.png">
+            </div>
+            <div class="options1">
+                <ul>
+                    <li><a href="images/home_i10.png" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="column2_image11">
+            <div class="image11_column2_box">
+                <img src="images/home_i11.png">
+            </div>
+            <div class="options1">
+                <ul>
+                    <li><a href="images/home_i11.png" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="column2_image12">
+            <div class="image12_column2_box">
+                <img src="images/home_i12.png">
+            </div>
+            <div class="options1">
+                <ul>
+                    <li><a href="images/home_i12.png" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="column2_image13">
+            <div class="image13_column2_box">
+                <img src="images/home_i13.png">
+            </div>
+            <div class="options1">
+                <ul>
+                    <li><a href="images/home_i13.png" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="column2_image14">
+            <div class="image14_column2_box">
+                <img src="images/home_i14.jpg">
+            </div>
+            <div class="options1">
+                <ul>
+                    <li><a href="images/home_i14.jpg" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="column2_image15">
+            <div class="image15_column2_box">
+                <img src="images/home_i15.jpg">
+            </div>
+           
+            <div class="options1">
+                <ul>
+                    <li><a href="images/home_i15.jpg" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>
+        
+        </div>
+
+        <div class="column2_image16">
+            <div class="image16_column2_box">
+                <img src="images/home_i16.jpg">
+            </div>
+            
+            <div class="options1">
+                <ul>
+                    <li><a href="images/home_i16.jpg" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>
+        
+        </div>
+    </div>    
+    <!-- column2 images ends -->
+
+    <!-- column3 images starts -->
+    <div class="images_column_3">
+        <div class="column3_image17">
+            <div class="image17_column3_box">
+                <img src="images/home_i17.png">
+            </div>
+            <div class="options1">
+                <ul>
+                    <li><a href="images/home_i17.png" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="column3_image18">
+            <div class="image18_column3_box">
+                <img src="images/home_i18.jpg">
+            </div>
+            <div class="options1">
+                <ul>
+                    <li><a href="images/home_i18.jpg" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="column3_image19">
+            <div class="image19_column3_box">
+                <img src="images/home_i19.jpg">
+            </div>
+            <div class="options1">
+                <ul>
+                    <li><a href="images/home_i19.jpg" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="column3_image20">
+            <div class="image20_column3_box">
+                <img src="images/home_i20.jpg">
+            </div>
+            <div class="options1">
+                <ul>
+                    <li><a href="images/home_i20.jpg" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="column3_image21">
+            <div class="image21_column3_box">
+                <img src="images/home_i21.jpg">
+            </div>
+            <div class="options1">
+                <ul>
+                    <li><a href="images/home_i21.jpg" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="column3_image22">
+            <div class="image22_column3_box">
+                <img src="images/home_i22.jpg">
+            </div>
+            <div class="options1">
+                <ul>
+                    <li><a href="images/home_i22.jpg" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="column3_image23">
+            <div class="image23_column3_box">
+                <img src="images/home_i23.jpg">
+            </div>
+            <div class="options1">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="column3_image24">
+            <div class="image24_column3_box">
+                <img src="images/home_i24.jpg">
+            </div>
+            <div class="options1">
+                <ul>
+                    <li><a href="images/home_i24.jpg" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>    
+     <!-- column3 images ends -->
+</div>
+<!-- images div ends-->
+
+<!-- videos div starts-->
+<div class="videos_div">
+    <!-- column1 videos starts -->
+    <div class="videos_column_1">
+        <div class="column1_video1"><a href="" target=""><video src="https://player.vimeo.com/external/384761655.sd.mp4?s=383ab4dbc773cd0d5ece3af208d8f963368f67e4&profile_id=139&oauth2_token_id=57447761" onmouseover="this.play()" onmouseout="this.pause()"muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="https://player.vimeo.com/external/384761655.sd.mp4?s=383ab4dbc773cd0d5ece3af208d8f963368f67e4&profile_id=139&oauth2_token_id=57447761" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column1_video2"><a href="" target=""><video src="https://player.vimeo.com/external/496797033.sd.mp4?s=5ed472674c6878067353d85224650f6bc4f4a247&profile_id=139&oauth2_token_id=57447761" onmouseover="this.play()" onmouseout="this.pause()"muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column1_video3"><a href="" target=""><video src="https://player.vimeo.com/external/517619980.sd.mp4?s=61be3cadb6566d23fb20ad2cf54876e2a85a78c5&profile_id=139&oauth2_token_id=57447761" onmouseover="this.play()" onmouseout="this.pause()"muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column1_video4"><a href="" target=""><video src="https://player.vimeo.com/external/576787721.sd.mp4?s=0d7d41391cf527ddd857113d790712a09fef9ce2&profile_id=164&oauth2_token_id=57447761" onmouseover="this.play()" onmouseout="this.pause()"muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column1_video5"><a href="" target=""><video src="https://player.vimeo.com/external/370762164.sd.mp4?s=79162c914dc5d9e4576be4fde2daff51f534083a&profile_id=139&oauth2_token_id=57447761" onmouseover="this.play()" onmouseout="this.pause()"muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column1_video6"><a href="" target=""><video src="https://player.vimeo.com/external/467813714.sd.mp4?s=71111e46466904d9d3e300aac54d708766922d86&profile_id=139&oauth2_token_id=57447761" onmouseover="this.play()" onmouseout="this.pause()"muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column1_video7"><a href="" target=""><video src="https://player.vimeo.com/external/337026530.sd.mp4?s=5e1bec41e7e0c227bd70d529f3e9f27d333d561e&profile_id=139&oauth2_token_id=57447761" onmouseover="this.play()" onmouseout="this.pause()"muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>        
+        </div>
+        <div class="column1_video8"><a href="" target=""><video src="https://player.vimeo.com/external/368308371.sd.mp4?s=979a87dde6cdf6994b17b04d483ac9fe94ceeeea&profile_id=139&oauth2_token_id=57447761" onmouseover="this.play()" onmouseout="this.pause()"muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column1_video9"><a href="" target=""><video src="https://player.vimeo.com/external/563709107.sd.mp4?s=c4a8dd1ed25d741d82527b2f7565dae92a650d04&profile_id=164&oauth2_token_id=57447761" onmouseover="this.play()" onmouseout="this.pause()"muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column1_video10"><a href="" target=""><video src="https://player.vimeo.com/external/554730485.sd.mp4?s=a255590cba90d5778c9cc1520f3ab3114dad2f09&profile_id=164&oauth2_token_id=57447761"onmouseover="this.play()" onmouseout="this.pause()"loop muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- column1 videos ends -->
+    
+    <!-- column2 videos starts -->
+    <div class="videos_column_2">
+        <div class="column2_video11"><a href="" target=""><video src="https://player.vimeo.com/external/368320203.sd.mp4?s=38b1bac5d627b94fb902597643461ee5f233d00a&profile_id=139&oauth2_token_id=57447761" onmouseover="this.play()" onmouseout="this.pause()"  loop muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+             </div>
+        </div>
+        
+        <div class="column2_video12"><a href="" target=""><video src="https://player.vimeo.com/external/354645265.sd.mp4?s=bcba6ad97db4cf5c345578c6bf36ba8cd01f7c17&profile_id=139&oauth2_token_id=57447761" onmouseover="this.play()" onmouseout="this.pause()" loop muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+             </div>
+        </div>
+        
+        <div class="column2_video13"><a href="" target=""><video src="https://player.vimeo.com/external/312894955.sd.mp4?s=9c6638f6a6fa70220ee7b29b63249d7f8ba1fa52&profile_id=164&oauth2_token_id=57447761" onmouseover="this.play()" onmouseout="this.pause()" loop muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+             </div>
+        </div>
+        
+        <div class="column2_video14"><a href="" target=""><video src="https://player.vimeo.com/external/336570892.sd.mp4?s=114e69fa67c49c6a3c21f0aa787829be0e5bf5ac&profile_id=139&oauth2_token_id=57447761" onmouseover="this.play()" onmouseout="this.pause()" loop muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+             </div>
+        </div>
+        
+        <div class="column2_video15"><a href="" target=""><video src="https://player.vimeo.com/external/465359714.sd.mp4?s=f8759449952fbcde204feeb94c25c9971d5d216b&profile_id=139&oauth2_token_id=57447761" onmouseover="this.play()" onmouseout="this.pause()" loop muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+             </div>
+        </div>
+        
+        <div class="column2_video16"><a href="" target=""><video src="https://player.vimeo.com/external/291047369.sd.mp4?s=2f1d1301e3fa84499e1e7b17b0cf92d20850400a&profile_id=164&oauth2_token_id=57447761" onmouseover="this.play()" onmouseout="this.pause()" loop muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+             </div>
+        </div>
+        
+        <div class="column2_video17"><a href="" target=""><video src="https://player.vimeo.com/external/299968768.sd.mp4?s=b0bf33e4823817a366f1a8672e9a913e7b70c8b0&profile_id=164&oauth2_token_id=57447761" onmouseover="this.play()" onmouseout="this.pause()" loop muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+             </div>
+        </div>
+        
+        <div class="column2_video18"><a href="" target=""><video src="https://player.vimeo.com/external/279818269.sd.mp4?s=368dc098b4322fac847fc0db9a20bdd07bb3d2cf&profile_id=164&oauth2_token_id=57447761" onmouseover="this.play()" onmouseout="this.pause()" loop muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+             </div>
+        </div>
+        
+        <div class="column2_video19"><a href="" target=""><video src="https://player.vimeo.com/external/334344435.hd.mp4?s=567ae1319c829aa812aa5a169a6e45a7f500eae7&profile_id=175&oauth2_token_id=57447761" onmouseover="this.play()" onmouseout="this.pause()" loop muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+             </div>
+        </div>
+        
+        <div class="column2_video20"><a href="" target=""><video src="https://player.vimeo.com/external/367564948.sd.mp4?s=d969af3ae466e775628a8d281105fd03a8df12ae&profile_id=139&oauth2_token_id=57447761" onmouseover="this.play()" onmouseout="this.pause()" loop muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+             </div>
+        
+        </div>
+    
+    </div> 
+    <!-- column2 videos ends -->
+
+    <!-- column3 videos starts -->
+    <div class="videos_column_3">
+        <div class="column3_video21"><a href="" target=""><video src="https://player.vimeo.com/external/369995583.sd.mp4?s=5afa28a551b1b1231d4f1a67b6136a1d2909f517&profile_id=139&oauth2_token_id=57447761" loop muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+             </div>
+        </div>
+        
+        <div class="column3_video22"><a href="" target=""><video src="https://player.vimeo.com/external/330412624.sd.mp4?s=853ea7644708b7986c992689dd351b0413d7b3ca&profile_id=164&oauth2_token_id=57447761" loop muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+             </div>
+        </div>
+        
+        <div class="column3_video23"><a href="" target=""><video src="https://player.vimeo.com/external/435535374.sd.mp4?s=45f430c24b8f0b2cdd5c81a65fdbd2ef7b0d3ee4&profile_id=139&oauth2_token_id=57447761" loop muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+             </div>        
+        </div>
+        
+        <div class="column3_video24"><a href="" target=""><video src="https://player.vimeo.com/external/546956779.sd.mp4?s=869e2262deb29d75d53ffd674973c2913e6d2cfc&profile_id=165&oauth2_token_id=57447761" loop muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+             </div>
+        </div>
+        
+        <div class="column3_video25"><a href="" target=""><video src="https://player.vimeo.com/external/448021962.sd.mp4?s=d4203959454fb67208f245a6bf9b99eb9ce632ca&profile_id=139&oauth2_token_id=57447761" loop muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+             </div>
+        </div>
+        
+        <div class="column3_video26"><a href="" target=""><video src="https://player.vimeo.com/external/477551554.hd.mp4?s=ab41554ae69f66f4b64adf4721d85840f57ceaf5&profile_id=175&oauth2_token_id=57447761" loop muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+             </div>
+        </div>
+        
+        <div class="column3_video27"><a href="" target=""><video src="https://player.vimeo.com/external/469640158.sd.mp4?s=6ae4f927bad66a78b1b04fd27459f69351aacb80&profile_id=139&oauth2_token_id=57447761" loop muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share" onclick="clicked_share()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+             </div>
+        </div>
+        
+        <div class="column3_video28"><a href="https://player.vimeo.com/external/477551254.sd.mp4?s=8687f00cad3b44085b73664ff87cf03fa3b3915c&profile_id=139&oauth2_token_id=57447761" target="iframe1"><video src="https://player.vimeo.com/external/477551254.sd.mp4?s=8687f00cad3b44085b73664ff87cf03fa3b3915c&profile_id=139&oauth2_token_id=57447761" loop muted></video></a>
+            <div class="options">
+                <ul>
+                    <li><a href="#" download><i title="download" class="fas fa-arrow-circle-down" onclick="clicked_download()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="download_click">0</span></li>
+                    <li><a href="#"><i title="give heart" class="fas fa-heart" onclick="clicked_heart()"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" class="heart_click">0</span></li>
+                    <li><a href="#"><i class="fas fa-share"></i></a><br><span style="font-size:20px;font-weight:bold;color:white" id="share_click">0</span></li>
+                </ul>
+             </div>
+        </div>
+    
+    </div>    
+     <!-- column3 videos ends -->
+</div>
+<!-- videos div ends-->
+<div class="footer">
+<h1>All Rights Are Reserved &copy; Copyrighted</h1>    
+</div>
+
+<script>    
+    let heartRed=Array.from(document.getElementsByClassName("fa-heart"),(element)=>{
+        element.addEventListener("click",()=>{
+            if(element.style.color=="white")
+           {   
+            element.style.color="red";
+           }
+           else
+           { 
+            element.style.color="white"
+           }
+        })
+    })
+
+    </script>    
+</body>
+</html>

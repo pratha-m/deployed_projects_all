@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+<!-- first page div starts -->
+<div class="section">     
+    <!-- navigation bar div starts -->
+    <div class="nav-container">
+    <nav class="nav-bar">
+    <ul>
+    <li style="font-size: 40px;color:plum;font-family:monospace;font-weight: 900">VIEWPORT</li>    
+    <!-- first li starts -->
+    <li><a href="index.html">Home</a></li> 
+    <!-- first li ends -->
+    
+    <!-- second li starts -->
+    <!-- <li><a href="#">About us</a></li>  -->
+    <!-- second li ends -->
+        
+    <!-- third li starts -->
+    <li><a class="active_images" href="#">Images<i class="fas fa-angle-down"></i></a>   
+         <!-- submenu1 starts -->
+        <div class="submenu1">
+        <ul>
+        <li><a href="images_html_files/nature_images.html">Nature</a></li>    
+        <li><a href="images_html_files/background_images.html">Background</a></li>    
+        <li><a href="images_html_files/illustrations_images.html">Ilustrations</a></li>    
+        <li><a href="images_html_files/cars_images.html">Cars</a></li>    
+        <li><a href="images_html_files/wildlife_images.html">Wildlife</a></li>    
+        </ul>
+        </div>
+        <!-- again submenu1 ends -->
+    </li> 
+    <!-- third li ends -->
+    
+    <!-- fourth li starts -->
+    <li><a class="active_images" href="#">videos<i class="fas fa-angle-down"></i></a>   
+        <!-- submenu1 starts -->
+       <div class="submenu1">
+       <ul>
+       <li><a href="videos_html_files/building.html">Building</a></li>    
+       <li><a href="videos_html_files/animation.html">Animation</a></li>    
+       <li><a href="videos_html_files/nature.html">Nature</a></li>    
+       <li><a href="videos_html_files/food.html">Food</a></li>    
+       <li><a href="videos_html_files/wildlife.html">wildlife</a></li>    
+       </ul>
+       </div>
+       <!-- again submenu1 ends -->
+    </li> 
+    <!-- fourth li ends -->
+    
+    <!-- fifth li starts -->
+    <li><a class="active_images" href="#">audios<i class="fas fa-angle-down"></i></a>   
+        <!-- submenu1 starts -->
+       <div class="submenu1">
+       <ul>
+       <li><a href="audios_html_files/1hollywood.html">Hollywood</a></li>    
+       <li><a href="audios_html_files/1bollywood.html">Bollywood</a></li>    
+       <li><a href="audios_html_files/1background.html">Background</a></li>    
+       </ul>
+       </div>
+       <!-- again submenu1 ends -->
+    </li> 
+    <!-- fifth li ends -->
+    </ul>    
+    </nav>    
+    </div> 
+    <!-- navigation bar div ends -->
+    
+    <div class="video-container">
+        <div class="color-overlay"></div>
+        <video src="videos/MyVideo.mp4" autoplay loop muted></video>
+        </div>
+        <!-- form starts -->
+<div class="form-div">
+    <div class="button_div">
+       <button class="sign_in_button"><a href="signin.html" style="text-decoration: none;color:white">Sign In</a></button>    
+       <button class="sign_up_button"><a href="signup.html" style="text-decoration: none;color:white">Sign Up</a></button>    
+    </div>    
+    <div class="form_container">
+    <form method="post">
+    <p>&nbsp;Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" id="email"></p> 
+    <p>&nbsp;Password&nbsp;<input type="password" name="password" id="password"></p>
+    <p><div class="button" id="button">Login</div><p>   
+    </form>
+    <p style="font-size:16px;padding:10px;margin-left:30px">if you dont have account?,<a href="signup.html" style="text-decoration: none;">create account</a></p>
+    <div  style="color:rgb(255, 239, 59);margin-left:10px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 18px;">
+      <p id="theMessage"></p>   
+      <p id="theMessage1"></p>   
+    </div>
+    </div>
+    </div>
+    <!-- form ends -->
+        </div>
+    <!-- first page div ends -->
+</div> 
+<script>
+loginButton=document.getElementById("button");
+loginButton.addEventListener("click",function(){
+    theMessage=document.getElementById("theMessage");
+    email=document.getElementById("email");
+    password=document.getElementById("password");
+    // if email empty
+    if(email.value.length==0){
+        theMessage.innerText="please enter the email";
+    }
+    // if email not empty 
+    else{
+        theMessage.innerText="";
+        // entered email validity 
+        if(!(email.value.includes("@gmail.com"||"@edu.in"))){
+            theMessage.innerText="please includes @gmail.com in email";
+        }
+    }
+
+    // if password empty
+    if(password.value.length===0){
+        theMessage1.innerText="Please Enter the password";
+    }
+    // if password not empty 
+    else{
+        theMessage1.innerText="";
+    }
+})    
+</script>   
+</body>
+</html>

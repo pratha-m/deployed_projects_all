@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ae82594478.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <a href="/" class="logo">TypingTime</a>
+    <ul class="items closeNavItems" id="navItems">
+        <li><a href="/">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Pricing</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">
+        <img src="images/burger.png" alt="">
+    </button>
+</header>
+    <section>
+          <div class="typeBoxContainer">
+               <div class="typeBox">
+                  <div class="wordBoxContainer"> 
+                    <div class="givenTextWords" id="givenTextWords" style="top:0px;">
+                    </div>  
+                  </div>
+                  <div class="inputText">
+                    <input type="text" autofocus="true" id="input" oninput="matchWords(event)">
+                    <div class="btns">
+                      <div class="countDown" id="countDown">60</div>
+                      <div class="restartBtn" id="restartBtn" onclick="restartTyping()"><i class="fa fa-solid fa-repeat"></i></div>
+                    </div>
+                  </div>
+               </div>
+          </div> 
+          <div class="popupBox hidePopup" id="popupBox">
+            <div class="eachInfo wpm">
+              <span>WPM</span>
+              <span id="wpmCount">12</span>
+            </div>
+            <div class="eachInfo cpm">
+              <span>CPM</span>
+              <span id="cpmCount">123</span>
+            </div>
+            <div class="eachInfo wrongs">
+              <span>Wrong Words</span>
+              <span id="wrongsCount">14</span>
+            </div>
+            <div class="eachInfo unattempted">
+              <span>Unattempted Words</span>
+              <span id="unattemptedCount">88</span>
+            </div>
+          </div>
+    </section>
+    <footer>
+      <div class="detailsSection">
+         <div class="companySummary">
+              <div>
+               <h2>TypingTime</h2>
+               <p>It is the typeing website in which you can practice your typing skills and enhance them</p>
+              </div>
+         </div>
+         <div class="quickLinks">
+             <div>
+                <h2>Quick Links</h2>
+                <ul>
+                   <li class='custom-button'><a class='custom-button' href="/"><i class="fa fa-solid fa-chevron-up fa-rotate-90"></i>Home</a></li>
+                   <li class='custom-button'><a class='custom-button' href="#"><i class="fa fa-solid fa-chevron-up fa-rotate-90"></i>About</a></li>
+                   <li class='custom-button'><a class='custom-button' href="#"><i class="fa fa-solid fa-chevron-up fa-rotate-90"></i>Contact</a></li>
+                   <li class='custom-button'><a class='custom-button' href="#"><i class="fa fa-solid fa-chevron-up fa-rotate-90"></i>Pricing</a></li>
+                </ul> 
+             </div>
+         </div>
+         <div class="contactDetails">
+              <div>
+                 <h2>Contact Info</h2>
+                 <span><i class="fa fa-solid fa-phone"></i>91+XXXXXXX</span>
+                 <span><i class="fa fa-solid fa-envelope"></i>prathamchhabra85@gmail.com</span>
+                 <span><i class="fa fa-solid fa-globe"></i>punjab,India-140401</span>
+                 <span class="socialLinks">
+                  <ul>
+                      <li><a href="#" class="eachSocialLink"><i class="fa fa-brands fa-github"></i></a></li>
+                      <li><a href="#" class="eachSocialLink"><i class="fa fa-brands fa-linkedin"></i></a></li>
+                      <li><a href="#" class="eachSocialLink"><i class="fa fa-brands fa-codepen"></i></a></li>
+                  </ul>
+                 </span>
+              </div>
+         </div>
+      </div>
+      <div class="copyrightSection">
+          <p>&copy;copyright2023</p>
+      </div>
+  </footer>
+    <script src="script.js"></script>
+</body>
+</html>

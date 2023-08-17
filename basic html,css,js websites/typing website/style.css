@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color:#292828e8 ;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    min-height: 84.2vh;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.typeBoxContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.typeBoxContainer>.typeBox{
+    height: 175px;
+    width: 90%;
+    background-color: #0000001c;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.typeBoxContainer>.typeBox>.wordBoxContainer{
+    height: 70%;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+}
+.typeBoxContainer>.typeBox>.wordBoxContainer>.givenTextWords{
+    width: 100%;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    top: 1px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.typeBoxContainer>.typeBox>.wordBoxContainer>.givenTextWords>span{
+    font-size: 30px;
+    padding: 7px;
+    line-height: 55px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 4px;
+    padding-bottom: 4px
+}
+.typeBoxContainer>.typeBox>.inputText{
+    height: 30%;
+    width: 100%;
+    background-color: #A7C8E7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 0px 10px 10px;
+}
+.typeBoxContainer>.typeBox>.inputText>input{
+    height:70%;
+    width:65%;
+    outline: none;
+    font-size: 23px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+}
+.typeBoxContainer>.typeBox>.inputText>.btns{
+    width:150px;
+    height: 70%;
+    /* background-color: grey; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.typeBoxContainer>.typeBox>.inputText>.btns>.countDown{
+    height: 100%;
+    width:50%;
+    background-color:rgb(123, 123, 157);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}    
+.typeBoxContainer>.typeBox>.inputText>.btns>.restartBtn{
+    height: 100%;
+    width:40%;
+    background-color:rgb(123, 123, 157);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    color: white;
+}    
+.typeBoxContainer>.typeBox>.inputText>.btns>.restartBtn:hover{
+    background-color:rgba(123, 123, 157, 0.715);
+}
+.typeBoxContainer>.typeBox>.inputText>.btns>.countDown:hover{
+    background-color:rgba(123, 123, 157, 0.715);
+}
+.typeBoxContainer>.typeBox>.inputText>.btns>.restartBtn>img{
+    width: 50%;
+}
+.popupBox{
+    height: 300px;
+    width: 400px;
+    background-color: transparent;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3)
+}
+.popupBox .eachInfo{
+    height: 50px;
+   width: 100%;
+   font-size: 24px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding:0px 40px;
+   color: white;
+}
+.popupBox .eachInfo span:last-child{
+    font-weight: bold;
+} 
+.popupBox .wpm{
+    height: 70px;
+    font-size: 50px;
+}
+.hidePopup{
+    display: none;
+}
+.showPopup{
+    display: flex;
+}
+.correct{
+    color: #2da22d;
+}
+.wrong{
+    color: red;
+}
+@media screen and (max-width:438px){
+    .popupBox{
+        width: 90%;
+    }
+}

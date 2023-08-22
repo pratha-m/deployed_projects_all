@@ -24,7 +24,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 app.use(cors({
     credentials:true,
-    origin: ['https://ecommercemernapp.netlify.app/']
+    origin: ['https://ecommercemernapp.netlify.app']
 }))
 app.use(cookieParser())
 

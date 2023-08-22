@@ -22,10 +22,22 @@ app.use(fileUpload({
 app.set("trust proxy",1)
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
-app.use(cors({
-    credentials:true,
-    origin: ['https://ecommercemernapp.netlify.app']
-}))
+
+const allowedOrigins = ['https://ecommercemernapp.netlify.app'];
+const corsOptions = {
+  credentials:true,  
+  origin:(origin,callback)=>{
+    if(allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } 
+    else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+};
+app.use(cors(corsOptions))
+
+
 app.use(cookieParser())
 
 app.use("",productRouter);

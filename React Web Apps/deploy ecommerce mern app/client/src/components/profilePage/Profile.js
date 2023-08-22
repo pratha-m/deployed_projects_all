@@ -75,20 +75,22 @@ const Profile = ({name,email,userId,successToast,errorToast}) => {
       const {success}=data;
       if(success){
          let inputName=document.getElementById("inputName");
-         const {name,email}=data.user;
-         inputName.value=name;
-         setNewName(name);
-         setNewEmail(email);
-         setIsLoading(false);
+         if(inputName){
+            const {name,email}=data.user;
+            inputName.value=name;
+            setNewName(name);
+            setNewEmail(email);
+            setIsLoading(false);
+         }
       }
       else{
          setIsLoading(false);
-         return;
       }
      })
-     .catch((result)=>{
+     .catch((eror)=>{
       setIsLoading(false);
-      console.log("Error in getting user profile")
+         console.log(eror);
+         console.log("Error in getting user profile")
      });
   },[runUseEffect,userId]);
 
@@ -102,16 +104,20 @@ const Profile = ({name,email,userId,successToast,errorToast}) => {
        </div>  
        <div className="profileField profileName">
           <b>Name</b>
-          {isLoading?
+          {isLoading?<>
            <div className='skeletBox'><Skeleton height={40} width={280}/></div>
-          :<input type='text' className='inputDisabledClass' onChange={(e)=>setNewName(e.target.value)} id='inputName' defaultValue={newName} disabled ></input>}
+           <input type='text' style={{display:"none"}} className='inputDisabledClass' onChange={(e)=>setNewName(e.target.value)} id='inputName' defaultValue={newName} disabled ></input>
+           </>:<input type='text' style={{display:"flex"}} className='inputDisabledClass' onChange={(e)=>setNewName(e.target.value)} id='inputName' defaultValue={newName} disabled ></input>
+          }
           <button className="editBtn" onClick={nameEdit}></button>
        </div>
        <div className="profileField profileEmail">
           <b>Email</b>
           {
-            isLoading?<div className='skeletBox'><Skeleton height={40} width={280}/></div>
-            :<input type='text' className='inputDisabledClass' onChange={(e)=>setNewEmail(e.target.value)} id='inputEmail' defaultValue={newEmail} disabled></input>
+            isLoading?<>
+            <div className='skeletBox'><Skeleton height={40} width={280}/></div>
+            <input type='text' style={{display:"none"}} className='inputDisabledClass' onChange={(e)=>setNewEmail(e.target.value)} id='inputEmail' defaultValue={newEmail} disabled></input>
+            </>:<input type='text' style={{display:"flex"}} className='inputDisabledClass' onChange={(e)=>setNewEmail(e.target.value)} id='inputEmail' defaultValue={newEmail} disabled></input>
           }
           <button className='editBtn' onClick={emailEdit}></button>
        </div>

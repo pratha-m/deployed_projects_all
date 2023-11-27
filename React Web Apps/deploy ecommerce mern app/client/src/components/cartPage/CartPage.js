@@ -130,7 +130,7 @@ const checkout=async(event)=>{
   const increaseQuantity=(id,index)=>{
     const quantityInput=document.getElementById(`noOfProductInput${index}`);
     quantityInput.stepUp();
-    Axios.put(`${process.env.REACT_APP_BASE_URL}/updatecart`,{cartQuatity:quantityInput.value,cartProductId:id,userId})
+    Axios.put(`${process.env.REACT_APP_BASE_URL}/updatecart`,{cartQuatity:parseInt(quantityInput.value),cartProductId:id,userId})
     .then((result)=>{
       getRequest()
       successToast("Updating quantity successfully !")
@@ -142,7 +142,7 @@ const checkout=async(event)=>{
   const decreaseQuantity=(id,index)=>{
     const quantityInput=document.getElementById(`noOfProductInput${index}`);
     quantityInput.stepDown();
-    Axios.put(`${process.env.REACT_APP_BASE_URL}/updatecart`,{cartQuatity:quantityInput.value,cartProductId:id,userId})
+    Axios.put(`${process.env.REACT_APP_BASE_URL}/updatecart`,{cartQuatity:parseInt(quantityInput.value),cartProductId:id,userId})
     .then((result)=>{
       getRequest()
       successToast("Updating quantity successfully !")

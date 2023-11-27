@@ -23,7 +23,7 @@ app.set("trust proxy",1)
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
-const allowedOrigins = ['https://ecommercemernapp.netlify.app'];
+const allowedOrigins = ['https://ecommercemernapp.netlify.app',"http://localhost:3000"];
 const corsOptions = {
   credentials:true,  
   origin:(origin,callback)=>{

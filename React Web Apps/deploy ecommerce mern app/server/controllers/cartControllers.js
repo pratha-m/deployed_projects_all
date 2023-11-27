@@ -37,35 +37,6 @@ const addToCart=async(req,res)=>{
            res.status(200).send({success:false,message:error.message})
        }
 }
-// const addToCart=async(req,res)=>{
-//         try{
-//             const id=req.body.id;
-//             const productname=req.body.productname;
-//             const productprice=req.body.productprice;
-//             const productimage=req.body.productimage;
-//             const productquantity=req.body.productquantity;
-//             const findDocumentId=await cartProduct.findById(id);
-//             if(findDocumentId==null){
-//                     const newCartProduct=new cartProduct({
-//                     productname:productname,
-//                     productprice:productprice,
-//                     productimage:productimage,
-//                     productquantity:productquantity,
-//                     _id:id
-//                 })
-//                 const cartProductCreated=await newCartProduct.save();
-//                 res.send(cartProductCreated)  
-//             }
-//             else{
-//                 console.log("this product is already in cart");
-//                 res.send();
-//             }
-//         }
-//         catch(error){
-//             console.log(error);
-//             res.send("error in adding product to cart");
-//         }
-// }
 const getCartProducts=async(req,res)=>{
         try{
             const userFind=await student.findById(req.params.userId);
@@ -89,7 +60,7 @@ const updateCartProduct=async(req,res)=>{
        const existingCartItem=userFind.cart.find(item=>item.product.toString()===cartProductId)
 
        if(!existingCartItem) return res.status(200).send({success:false,message:"Product is Not in Cart"});
-       
+
        existingCartItem.quantity=cartQuatity;
 
        existingCartItem.price=cartQuatity*(existingCartItem.initialprice);
@@ -98,6 +69,7 @@ const updateCartProduct=async(req,res)=>{
        
        res.send({success:true,message:"Cart Updated Successfully",cart:userFind.cart});
     }catch(error){
+        console.log(error.message);
         res.status(200).send({success:false,message:"Error in Updating cart Item",error:error.message});
     }
 }

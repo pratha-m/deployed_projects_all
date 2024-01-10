@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: max-content;
+    width: 90%;
+    padding: 10px;
+}
+.home .chatContainer .chatsBox{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(196, 193, 193);
+    margin: 10px 0px;
+    border-radius: 20px;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.home .chatContainer .chatsBox p{
+    width: max-content;
+    padding:10px 15px;
+    color: white;
+    border-radius: 10px;
+    margin: 5px 0px;
+    max-width: 250px;
+}
+.home .chatContainer .chatsBox .left{
+    background-color: gray;   
+    align-self: flex-start;
+}
+.home .chatContainer .chatsBox .right{
+    background-color: green;
+    align-self: flex-end;
+}
+.home .chatContainer .chatsBox .center{
+    background-color: rgb(68, 129, 68);
+    align-self:center;
+}
+.home .chatContainer form{
+    display: flex;
+}
+.home .chatContainer input{
+    height: 40px;
+    width: 95%;
+    outline: none;
+    border-radius:10px 0px 0px 10px;
+    border: 1px solid black;
+    font-size: 20px;
+}
+.home .chatContainer button{
+    height: 40px;
+    width: 5%;
+    min-width: 70px;
+}

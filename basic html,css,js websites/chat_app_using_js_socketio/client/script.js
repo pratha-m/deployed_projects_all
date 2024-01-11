@@ -3,7 +3,6 @@ const socket=io("http://localhost:3001");
 const messageForm=document.getElementById("messageForm");
 const name=prompt("Enter Name :");
 const email=prompt("Enter Email :");
-
 const addMessage=(message,position)=>{
      const chatsBox=document.getElementById("chatsBox");
      const element=document.createElement("p");
@@ -14,7 +13,9 @@ const addMessage=(message,position)=>{
 messageForm.addEventListener("submit",function(e){
     e.preventDefault();
     const messageInput=document.getElementById("message");
-    if(messageInput.value===null || messageInput.value==='' || messageInput.value[0]===' ') alert("Pls Enter Something To Send ");
+    if(messageInput.value===null || messageInput.value==='' || messageInput.value[0]===' '){
+        alert("Pls Enter Message To Send ");
+    }
     else{
         socket.emit("user:send:msg",{message:messageInput.value})
         addMessage(`You: ${messageInput.value}`,"right");

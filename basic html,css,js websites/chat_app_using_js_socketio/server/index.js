@@ -25,6 +25,4 @@ io.on("connection",(socket)=>{
         });
     })
 })
-io.listen(3001,()=>{
-    console.log("Server Connected");
-})
+io.listen(3001);

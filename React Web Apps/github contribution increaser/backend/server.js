@@ -6,7 +6,8 @@ const { sendEmail } = require("./helper/sendEmail");
 
 const app=express();
 
-cron.schedule("0 0 */24 * * *",()=>{
+cron.schedule("0 * * * *",()=>{
+   console.log("Running after 1 hour");
    sendEmail(process.env.TO_EMAIL);
 })
 
